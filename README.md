@@ -12,6 +12,17 @@ barman-exporter -f /var/lib/prometheus/node_exporter/barman.prom
 
 Remember to tell `node_exporter` to use this path with `--collector.textfile.directory` option.
 
+## Supervisor Service
+
+If you have installed supervisor you can configure Barman Exporter as supervisor service.  
+Copy the the file `supervisor/barman_exporter.conf` in `/etc/supervisor/conf.d` folder
+
+```
+cp supervisor/barman_exporter.conf /etc/supervisor/conf.d/barman_exporter.conf
+```
+
+
+
 ## Grafana dashboard
 
 You can find basic grafana dashboard in `grafana-dashboard.json`. It is open for improvements.
