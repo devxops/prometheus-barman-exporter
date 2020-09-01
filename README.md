@@ -18,10 +18,16 @@ If you have installed supervisor you can configure Barman Exporter as supervisor
 Copy the the file `supervisor/barman_exporter.conf` in `/etc/supervisor/conf.d` folder
 
 ```
+[from repository root]
 cp supervisor/barman_exporter.conf /etc/supervisor/conf.d/barman_exporter.conf
 ```
 
+Supervisor can be installed from the OS Package Manager.
 
+(Ubuntu/Debian)
+```
+apt-get update && apt-get install -y supervisor
+```
 
 ## Grafana dashboard
 
